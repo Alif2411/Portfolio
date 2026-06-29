@@ -96,14 +96,19 @@ export default function Home() {
                   target="_blank"
                   className="text-on-surface-variant hover:text-primary transition-colors"
                 >
-                  <span className="material-symbols-outlined">code</span>
+                  <img src="github.png" alt="GitHub" width="24" height="24" />
                 </a>
                 <a
                   href="https://linkedin.com/in/"
                   target="_blank"
                   className="text-on-surface-variant hover:text-primary transition-colors"
                 >
-                  <span className="material-symbols-outlined">public</span>
+                  <img
+                    src="linkedin.png"
+                    alt="LinkedIn"
+                    width="24"
+                    height="24"
+                  />
                 </a>
               </div>
             </div>
@@ -335,9 +340,7 @@ export default function Home() {
                     target="_blank"
                     className="flex items-center gap-2 text-on-surface-variant font-bold hover:text-white transition-all"
                   >
-                    <span className="material-symbols-outlined text-sm">
-                      code
-                    </span>{" "}
+                    <img src="github.png" alt="GitHub" width="24" height="24" />{" "}
                     Frontend
                   </a>
                   <a
@@ -345,9 +348,7 @@ export default function Home() {
                     target="_blank"
                     className="flex items-center gap-2 text-on-surface-variant font-bold hover:text-white transition-all"
                   >
-                    <span className="material-symbols-outlined text-sm">
-                      code
-                    </span>{" "}
+                    <img src="github.png" alt="GitHub" width="24" height="24" />{" "}
                     Backend
                   </a>
                 </div>
@@ -389,9 +390,7 @@ export default function Home() {
                     target="_blank"
                     className="flex items-center gap-2 text-on-surface-variant font-bold hover:text-white transition-all"
                   >
-                    <span className="material-symbols-outlined text-sm">
-                      code
-                    </span>{" "}
+                    <img src="github.png" alt="GitHub" width="24" height="24" />{" "}
                     GitHub
                   </a>
                 </div>
@@ -431,9 +430,7 @@ export default function Home() {
                     target="_blank"
                     className="flex items-center gap-2 text-on-surface-variant font-bold hover:text-white transition-all"
                   >
-                    <span className="material-symbols-outlined text-sm">
-                      code
-                    </span>{" "}
+                    <img src="github.png" alt="GitHub" width="24" height="24" />{" "}
                     GitHub
                   </a>
                 </div>
