@@ -74,11 +74,11 @@ export default function ShaderBackground({
           vec2 mouse = u_mouse / u_resolution;
           
           // Background color: Deep Dark Slate
-          vec3 bgColor = vec3(0.05, 0.08, 0.06);
+          vec3 bgColor = vec3(0.08, 0.02, 0.05);
           
           // Emerald green (#10B981) and subtle Cyan
           vec3 color1 = vec3(0.06, 0.72, 0.50); // Emerald
-          vec3 color2 = vec3(0.0, 0.6, 0.65);   // Cyan
+          vec3 color2 = vec3(0.4, 0.6, 0.65);   // Cyan
           
           float noise = snoise(uv * 2.0 + u_time * 0.1);
           float noise2 = snoise(uv * 4.0 - u_time * 0.05);
@@ -88,8 +88,8 @@ export default function ShaderBackground({
           float blob2 = smoothstep(0.4, 0.9, snoise(uv * 2.5 - u_time * 0.05 - mouse * 0.1));
           
           vec3 finalColor = bgColor;
-          finalColor = mix(finalColor, color1, blob1 * 0.15);
-          finalColor = mix(finalColor, color2, blob2 * 0.12);
+          finalColor = mix(finalColor, color1, blob1 * 0.5);
+          finalColor = mix(finalColor, color2, blob2 * 0.6);
           
           // Add subtle grid glow
           vec2 grid = fract(uv * 40.0);

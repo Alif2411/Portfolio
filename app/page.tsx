@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
-import Navbar from "../Component/Navbar";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import ShaderBackground from "@/components/background";
 
 export default function Home() {
   // Intersection Observer for scroll reveal animations
@@ -44,12 +45,13 @@ export default function Home() {
       <Navbar />
 
       <main className="scroll-smooth pt-16">
+        <ShaderBackground />
         {/* ===== HERO SECTION ===== */}
         <section
           id="hero"
           className="min-h-screen flex items-center pt-24 px-6 sm:px-10 max-w-[1280px] mx-auto"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full z-20">
             <div className="space-y-8">
               {/* glow-pulse: A custom keyframe animation in globals.css that pulses a box-shadow to simulate a glowing light. */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-mono text-sm glow-pulse">
@@ -110,11 +112,6 @@ export default function Home() {
               <div className="absolute -inset-4 bg-primary/20 blur-[100px] rounded-full"></div>
               {/* glass-card: Uses backdrop-filter: blur() and rgba background to create a frosted glass effect */}
               <div className="glass-card p-8 rounded-3xl relative overflow-hidden group">
-                <div className="absolute top-0 right-0 p-4 opacity-20">
-                  <span className="material-symbols-outlined text-9xl">
-                    auto_awesome
-                  </span>
-                </div>
                 <div className="space-y-4 font-mono text-sm relative z-10">
                   <div className="flex gap-2 text-primary/60">
                     <span className="w-3 h-3 rounded-full bg-red-500/50"></span>
@@ -133,7 +130,7 @@ export default function Home() {
                     <br />
                     &nbsp;&nbsp;focus: [
                     <span className="text-tertiary">"AI"</span>,{" "}
-                    <span className="text-tertiary">"Web3"</span>,{" "}
+                    <span className="text-tertiary">"WebDev"</span>,{" "}
                     <span className="text-tertiary">"UX"</span>],
                     <br />
                     &nbsp;&nbsp;status:{" "}
@@ -169,7 +166,7 @@ export default function Home() {
                   src="/Alif Photo.png"
                   alt="Alif Al Sufian"
                   fill
-                  className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700"
+                  className="object-cover object-top"
                 />
               </div>
             </div>
@@ -199,26 +196,10 @@ export default function Home() {
                 </div>
                 <div className="glass-card p-6 rounded-xl text-center">
                   <span className="block font-sans text-[32px] font-bold text-primary">
-                    10+
+                    7+
                   </span>
                   <span className="font-mono text-on-surface-variant uppercase tracking-widest text-xs">
                     Projects Built
-                  </span>
-                </div>
-                <div className="glass-card p-6 rounded-xl text-center">
-                  <span className="block font-sans text-[32px] font-bold text-primary">
-                    3+
-                  </span>
-                  <span className="font-mono text-on-surface-variant uppercase tracking-widest text-xs">
-                    Years Learning
-                  </span>
-                </div>
-                <div className="glass-card p-6 rounded-xl text-center">
-                  <span className="block font-sans text-[32px] font-bold text-primary">
-                    20+
-                  </span>
-                  <span className="font-mono text-on-surface-variant uppercase tracking-widest text-xs">
-                    Tech Stack
                   </span>
                 </div>
               </div>
@@ -403,12 +384,16 @@ export default function Home() {
                   model with credit verification and admin dashboard.
                 </p>
                 <div className="flex gap-4 pt-4">
-                  <span className="flex items-center gap-2 text-primary/50 font-bold">
+                  <a
+                    href="https://github.com/Alif2411/beehive"
+                    target="_blank"
+                    className="flex items-center gap-2 text-on-surface-variant font-bold hover:text-white transition-all"
+                  >
                     <span className="material-symbols-outlined text-sm">
-                      lock
+                      code
                     </span>{" "}
-                    Private Repo
-                  </span>
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
@@ -469,8 +454,8 @@ export default function Home() {
             <div className="space-y-6">
               {/* Education 1 */}
               <div className="glass-card p-8 rounded-2xl border-secondary/20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-5">
-                  <span className="material-symbols-outlined text-9xl">
+                <div className="absolute top-0 right-0 p-4 opacity-50">
+                  <span className="material-symbols-outlined text-9xl ">
                     school
                   </span>
                 </div>
@@ -482,7 +467,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="text-right">
-                    <span className="inline-block px-3 py-1 bg-secondary/10 text-on-surface-variant rounded-full font-mono text-sm border border-secondary/20">
+                    <span className="inline-block px-3 py-1 bg-white/5 text-on-surface-variant rounded-full font-mono text-sm border border-white/10">
                       2022 - 2026
                     </span>
                   </div>
@@ -496,7 +481,7 @@ export default function Home() {
 
               {/* Education 2 */}
               <div className="glass-card p-8 rounded-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-5">
+                <div className="absolute top-0 right-0 p-4 opacity-50">
                   <span className="material-symbols-outlined text-9xl">
                     history_edu
                   </span>
@@ -522,7 +507,7 @@ export default function Home() {
 
               {/* Education 3 */}
               <div className="glass-card p-8 rounded-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-5">
+                <div className="absolute top-0 right-0 p-4 opacity-50">
                   <span className="material-symbols-outlined text-9xl">
                     history_edu
                   </span>
@@ -591,7 +576,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-surface w-full py-12 border-t border-white/5">
+      <footer className="bg-surface w-full py-12 border-t border-white/5 z-20">
         <div className="flex flex-col md:flex-row justify-between items-center px-6 lg:px-10 gap-6 max-w-[1280px] mx-auto">
           <div className="flex flex-col items-center md:items-start gap-2">
             <span className="font-sans text-base font-bold text-on-surface">
