@@ -80,7 +80,7 @@ export default function Home() {
                   View Projects
                 </button>
                 <a
-                  href="https://drive.google.com/file/d/1-aOlV16-jrzH3Izqy03EsaZnQXlUzOsj/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1ujC3igbCG0MuKsP6VjHbyq1XVCKBHoJk/view?usp=drive_link"
                   target="_blank"
                   className="px-8 py-4 border border-white/10 hover:border-primary/50 text-on-surface font-bold rounded-lg backdrop-blur-sm transition-all"
                 >
@@ -269,16 +269,14 @@ export default function Home() {
                 <h3 className="font-sans text-xl font-bold">Backend</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {["NestJS", "Node.js", ".NET", "PostgreSQL", "MongoDB"].map(
-                  (skill) => (
-                    <span
-                      key={skill}
-                      className="px-3 py-1 rounded-full bg-primary/5 border border-primary/20 text-xs font-mono text-primary"
-                    >
-                      {skill}
-                    </span>
-                  ),
-                )}
+                {["NestJS", "Node.js", ".NET", "PostgreSQL"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 rounded-full bg-primary/5 border border-primary/20 text-xs font-mono text-primary"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </div>
 

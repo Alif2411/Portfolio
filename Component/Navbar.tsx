@@ -44,7 +44,7 @@ export default function Navbar() {
           {/* Resume CTA & Dark Mode (desktop) */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="https://drive.google.com/file/d/1-aOlV16-jrzH3Izqy03EsaZnQXlUzOsj/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1ujC3igbCG0MuKsP6VjHbyq1XVCKBHoJk/view?usp=drive_link"
               target="_blank"
               className="bg-primary text-on-primary font-bold px-6 py-2 rounded-full hover:shadow-[0_0_20px_rgba(78,222,163,0.4)] transition-all active:scale-95"
             >
@@ -78,7 +78,7 @@ export default function Navbar() {
               ))}
               <div className="mt-2 px-2">
                 <a
-                  href="https://drive.google.com/file/d/1-aOlV16-jrzH3Izqy03EsaZnQXlUzOsj/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1ujC3igbCG0MuKsP6VjHbyq1XVCKBHoJk/view?usp=drive_link"
                   target="_blank"
                   className="inline-block bg-primary text-on-primary font-bold px-6 py-2 rounded-full shadow-[0_0_20px_rgba(78,222,163,0.2)]"
                 >
