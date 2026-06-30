@@ -460,7 +460,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-sans text-xl font-bold">BSc in CSE</h3>
                     <p className="text-on-surface-variant font-mono text-sm mt-1">
-                      American University Bangladesh
+                      American International University Bangladesh
                     </p>
                   </div>
                   <div className="text-right">
